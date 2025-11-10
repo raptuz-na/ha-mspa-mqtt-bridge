@@ -1,0 +1,29 @@
+{
+  "name": "mSPA MQTT Bridge",
+  "version": "1.0",
+  "slug": "mspa_mqtt_bridge",
+  "description": "Bridge between mSPA API and MQTT/Home Assistant",
+  "arch": ["armv7", "armhf", "amd64", "aarch64"],
+  "startup": "services",
+  "boot": "auto",
+  "options": {
+    "mqtt_broker": "YOUR_MQTT_BROKER_IP",
+    "mqtt_user": "YOUR_MQTT_USERNAME",
+    "mqtt_pass": "YOUR_MQTT_PASSWORD",
+    "app_email": "YOUR_EMAIL",
+    "app_pass": "YOUR_PASSWORD",
+    "app_id": "YOUR_APP_ID",
+    "app_secret": "YOUR_APP_SECRET",
+    "poll_interval": 300
+  },
+  "schema": {
+    "mqtt_broker": "str",
+    "mqtt_user": "str",
+    "mqtt_pass": "str",
+    "app_email": "str",
+    "app_pass": "str",
+    "app_id": "str",
+    "app_secret": "str",
+    "poll_interval": "int"
+  }
+}
